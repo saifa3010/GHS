@@ -1,7 +1,12 @@
 @extends('layouts.userPagesLayout')
 
 @section('content')
+<style>
+    .star{
+        margin-left: 40px
 
+    }
+</style>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Check if the alert has been shown before
@@ -48,14 +53,14 @@
     <div class="row" id="workersContainer">
         @foreach ($workers as $worker)
             <div class="col-md-6 mb-4 cardp" data-city="{{ $worker->city }}">
-                <div class="card" style="border-radius: 18px;padding:15px">
+                <div class="card" style="border-radius: 18px;padding:15px;height:500px">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img class="card-img" style="border-radius: 50%; padding: 10px" src="{{ asset('images/' . $worker->image) }}" alt="Worker Image" >
+                            <img class="card-img" style="border-radius: 50%; padding:10px;width:150px;height:150px" src="{{ asset('images/' . $worker->image) }}" alt="Worker Image" >
                             <p style="margin:0;text-align:center;color:rgb(7, 155, 2)">{{$worker->status}}</p>
-                            <div style="display: inline" class="rating-container">
+                            <div class="star"  style="display: inline" class="rating-container">
                                 @for ($i = 1; $i <= round($averageRatings[$worker->id]); $i++)
-                                    <label class="fa fa-star" title="{{ $i }} stars" style="color: #c59b08; margin-left: 15px;"></label>
+                                    <label class="fa fa-star" title="{{ $i }} stars" style="color: #c59b08;"></label>
                                 @endfor
                             </div>
                         </div>
@@ -66,8 +71,8 @@
                                 <h5 class="card-title">{{ $worker->firstName }} {{ $worker->lastName }} <span style="float: right" class="float-right"><small>JD</small>{{ $worker->price }}/hr</span></h5>
                                 <p class="card-text">
                                     <strong>How I can help:</strong><br>
-                                    <div style="background-color: rgb(236, 232, 232); padding: 5px">
-                                        {{ $worker->description }}
+                                    <div style="background-color: rgb(236, 232, 232);padding:5px">
+                                        {{ $worker->skillsExperience }}
                                     </div>
                                 </p>
                                 <div class="comment">

@@ -22,15 +22,14 @@
                         <div style="border-radius: 18px" class="card card-primary card-outline">
                             <div class="card-body box-profile">
                                 <div class="text-center">
-                                    <img class="profile-user-img img-fluid" style="border-radius: 50%;width:100px"
-                                        src="{{ asset('images/' . $worker->image) }}" alt="User profile picture">
+                                    <img class="card-img" style="border-radius: 50%; padding:10px;width:150px;height:150px" src="{{ asset('images/' . $worker->image) }}" alt="Worker Image" >
                                 </div>
 
                                 <h3 class="profile-username text-center">
                                     <p>{{ $worker->firstName }} {{ $worker->lastName }}</p>
                                 </h3>
 
-                                <p class="text-muted text-center">{{ $worker->status }}</p>
+                                <p style="margin:0;text-align:center;color:rgb(7, 155, 2)">{{$worker->status}}</p>
 
                                 <b>Price: </b> <a style="float: right"><small>JD</small>{{ $worker->price }}/hr</a>
                                 <hr>

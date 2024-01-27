@@ -2,7 +2,7 @@
 
 @section("content")
 
-@section('title',"Show About Us")
+@section('title',"Footer")
 
 
 

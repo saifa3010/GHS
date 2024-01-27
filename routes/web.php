@@ -41,8 +41,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Route::get('/Home', function () {
-//     return view('admin.home');})->middleware(['auth', CheckeUserRole::class])->name('home');
 Route::get("/Home",[HomeDashboardController::class,'home'])->middleware(['auth', CheckeUserRole::class])->name('home');
 
 Route::resource('service', ServiceController::class)->middleware(['auth', CheckeUserRole::class]);

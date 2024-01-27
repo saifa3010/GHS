@@ -2,7 +2,7 @@
 
 @section("content")
 
-@section('title',"Add Workers")
+@section('title',"Comment")
 
 
 @if ($message = Session::get('success'))

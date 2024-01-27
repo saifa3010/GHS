@@ -19,7 +19,7 @@
             <div style="margin-left: 40%;">
               <h6 style="text-align: center;"><h6 style="text-align: center;">{{ $task->worker->category->name }}</h6>
             </h6>
-              <img class="mt-1" style="width: 80px; border-radius: 50%;" src="{{asset('images/'. $task->worker->image)}}">
+              <img class="mt-1" style="border-radius: 50%;width:80px;height:80px" src="{{asset('images/'. $task->worker->image)}}">
               <h6 style="text-align: center;">{{ $task->worker->firstName }} {{ $task->worker->lastName }} </h6>
             </div>
           </li>

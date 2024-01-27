@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Apex - Home Repair Website Template</title>
+    <title>GHS</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
+    <meta name="description" content="Home Services">
+    <meta name="keywords" content="child care, cooking, cleaning, plumbing, carpentry, painting, electricity">    <meta content="" name="keywords">
     <meta content="" name="description">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
